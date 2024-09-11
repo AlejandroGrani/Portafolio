@@ -1,0 +1,33 @@
+---
+import ExperienceItems from "./ExperienceItems.astro"
+
+ const EXPERIENCE =[
+    
+    {
+        date: 'Septiembre del 2023 hasta Mayo de 2024 ',
+        tittle: 'Desarrollador:',
+        company: 'Entersoft',
+        description: 
+         'Desarrollo proyectos tecnológicos como trabajador externo para el Banco de Chile, especializándome en el manejo de herramientas como DataStage, Power BI, SQL Developer, entornos Shell y Visual StudioCode.',
+    },
+    {
+        date: 'Mayo del 2020 hasta  Septiembre de 2023 ',
+        tittle: 'Personal Administrativo:',
+        company: 'HC Abastecimientos Integrales',
+        description: 
+         'Desempeñé labores de almacenado y reposición de productos de ferretería y de primera necesidad, además el diseño de mecanismo de control de inventario, logistica y suministro',
+    }
+ ]
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    
+    {
+        EXPERIENCE.map((experience) => (
+            <li class="mb-10 ms-4"> 
+                <ExperienceItems {...experience} />
+            </li>
+        ))
+    }
+   
+</ol>
+

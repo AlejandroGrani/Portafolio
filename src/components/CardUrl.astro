@@ -1,0 +1,40 @@
+---
+import '../components/estilos/CardsUrl.css'
+import PostgresIcon from './icons/Postgres.astro'
+import PrismaIcon from './icons/Prisma.astro'
+import NextIcon from './icons/Next.astro'
+import TaildIcon from './icons/Taild.astro'
+---
+
+<a href="https://github.com/AlejandroGrani/URL-Shortener" target="_blank" rel="noopener noreferrer">
+  <div class="card">
+    <img src="/proyectos/URL.jpg" alt="Url Shortener" class="card-image">
+    
+    <p class="card-title">URL Shortener</p>
+    <p class="card-body">Acortador de URL que convierte enlaces largos en versiones más cortas y faciles de compartir</p>
+    
+    <div class="card-logos flex justify-center items-end">
+      <div class="icon-container">
+        <PostgresIcon class="icon" />
+        <span>Postgres</span>
+      </div>
+      
+      <div class="icon-container">
+        <PrismaIcon class="icon" />
+        <span>Prisma</span>
+      </div>
+      
+      <div class="icon-container">
+        <NextIcon class="icon" />
+        <span>Next.js</span>
+      </div>
+
+      <div class="icon-container">
+        <TaildIcon class="icon" />
+        <span>tailwind</span>
+      </div>
+
+      
+    </div>
+  </div>
+</a>

@@ -1,0 +1,93 @@
+.card {
+  padding: 20px;
+  width: 330px;
+  min-height: 370px;
+  border-radius: 20px;
+  background: #212121;
+  box-shadow: 5px 5px 8px #1b1b1b,
+              -5px -5px 8px #272727;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  translate: 0 -10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #b2eccf;
+  margin: 15px 0 0 10px;
+}
+
+.card-image {
+  min-height: 170px;
+  background-color: #313131;
+  border-radius: 15px;
+  background: #313131;
+  box-shadow: inset 5px 5px 3px #2f2f2f,
+              inset -5px -5px 3px #333333;
+}
+.card-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-container {
+  flex: 1; /* Agrega este estilo para que cada icono ocupe el mismo espacio */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body {
+  margin: 13px 0 20px 10px; /* Aumenté el margen inferior para más espacio entre el texto y las imágenes */
+  color: rgb(184, 184, 184);
+  font-size: 15px;
+}
+
+.footer {
+  float: right;
+  margin: 28px 0 0 18px;
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+.by-name {
+  font-weight: 700;
+}
+
+.card-logos {
+  display: flex;
+  justify-content: flex-start; /* Coloca los logos a la izquierda */
+  padding: 10px 0;
+  gap: 8px; /* Ajusta el espacio entre los íconos */
+}
+
+.card-logos .icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave para escala y sombra */
+}
+
+.card-logos .icon:hover {
+  transform: scale(1.2); /* Aumenta el tamaño del icono al pasar el ratón por encima */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Añade una sombra para dar un efecto de profundidad */
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 14px;
+  color: #666;
+}
