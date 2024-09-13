@@ -12,6 +12,7 @@ import CardUrl from '../components/CardUrl.astro';
 import CardPro from '../components/CardPro.astro';
 import Tarjeta from '../components/Tarjeta.astro';
 import '../components/estilos/Goku.css'; 
+import Skills from '../components/Skills.astro';
 ---
 
 <Layout title="Portafolio de Alejandro Granifo - Desarrollador y Programador">
@@ -74,8 +75,13 @@ import '../components/estilos/Goku.css';
             </div>
         </SectionContainer>
 
+        <SectionContainer id="habilidades">
+            <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center pb-5"> Habilidades: </h2>
+            <Skills />
+        </SectionContainer> 
+        
         <SectionContainer id="contacto">
-            <h2 class="text-3xl font-semibold mb-7"> Currículum : </h2>
+            <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center pb-5"> Currículum: </h2>
             <Tarjeta />
         </SectionContainer>    
 
